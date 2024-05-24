@@ -1,0 +1,30 @@
+
+/* class flex-all-center is chose as it'd make any content inside the container center. */
+
+.btn{
+    
+font-family: 'Barriecito', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+    padding: 3.5px;
+    color: var(--main-bg-color);
+    border: 2px solid rgb(227, 221, 221);
+    cursor: pointer;
+}
+.btn img{
+    height: 17px;
+}
+.my-1{
+    margin: 0 17px;
+}
+.my-2{
+    margin: 21px 0;
+}
+.text-center{
+    text-align: center;
+}

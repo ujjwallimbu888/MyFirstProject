@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,400;0,500;1,300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@600&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Kanit&family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,400;0,500;1,300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@600&family=Rubik&display=swap");
+/* the difference between import and link is that links are directly appliled in the html while import is put on css */
+:root {
+  --main-bg-color: rgb(242, 242, 244);
+  /* css var properties can be used to change the colour of the website with one click of a button. 
+    And the same thing can be used to create dark mode and day mode with a click of a button.*/
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: "Barriecito", cursive;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--main-bg-color);
+}
+nav {
+  display: flex;
+  /* by writing display:flex we're able to have the logo as well as nav bar on the same box and making the container ie .logo flex and aligining the image center after adjusting it's size is what we get for the end result that we've. */
+}
+nav ul {
+  font-size: larger;
+  height: 72px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  margin: 0px 12px;
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(100, 87, 87);
+  font-weight: bold;
+  /* :hover is used to denot what actions were to happen if the cursor is hovered over. */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  /* since flexbox targets the container, that's why it's written on container */
+}
+.logo img {
+  width: 410px;
+  height: 48px;
+  /* the size of the img should be that and that's why it's decided to be that way. */
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 0 42px;
+  padding: 0 28px;
+}
+.search input {
+  width: 187px;
+  height: 25px;
+  border-radius: 16px;
+  margin: 0 12px 0 0;
+}
+main {
+  min-height: calc(100vh - 10vh - 72px);
+  /* the calc function is helpful to calculate how much size we'd like a certain part of website to have after adjusting for the header and footer or other elements on the page. */
+}
+.tags {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.tags ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tags ul li {
+  font-size: large;
+  list-style: none;
+  margin: 0 35px;
+}
+.tags ul li a {
+  text-decoration: none;
+  color: black;
+}
+.box {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  display: flex;
+  height: 35vh;
+  width: 80vw;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+}
+.slider img {
+  width: 80vw;
+  min-height: 20vh;
+}
+.card {
+  font-family: "Barriecito", cursive;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik", sans-serif;
+  max-width: 100vw;
+  margin: auto;
+  background-color: var(--main-bg-color);
+}
+.card h2 {
+  text-align: center;
+}
+.card-item {
+  width: 20vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 17px;
+}
+.card-item:hover {
+  opacity: 0.7;
+}
+.carditems {
+  display: flex;
+  justify-content: center;
+}
+
+.card1 {
+  text-align: center;
+  background-color: var(--main-bg-color);
+}
+.card-item1 {
+  height: 20vh;
+  width: 10vw;
+}
+.card-item1 img {
+  height: 20vh;
+  width: 10vw;
+}
+.stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carditems1 {
+  margin: 0 32px;
+}
+footer {
+  height: 20vh;
+  margin: 23px 0 0 0;
+  font-family: "Barriecito", cursive;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(34, 37, 41);
+  color: white;
+}
+.card-item1 img {
+  border-radius: 23px;
+  height: 100px;
+  width: 100px;
+}
+.card-item1:hover {
+  opacity: 0.7;
+}
+.somethings {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(34, 37, 41);
+}
+.one ul li a {
+  text-decoration: none;
+  color: white;
+}
+.one ul li {
+  list-style-type: none;
+}
+.last {
+  text-align: center;
+  margin: 12px 0;
+}
+.one {
+  margin: 0 30px;
+}
